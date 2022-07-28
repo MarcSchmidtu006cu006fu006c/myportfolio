@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.navbar {
+    background-color: #4C4E52;
+    padding: 12px;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 1),
+    0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-myname{
+    font-size: 40px;
+    font-weight: 450;
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav-myname:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.nav-myname:active {
+    color: lightgrey;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-weight: normal;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    padding: 13px 20px;
+    min-width: 75px;
+}
+
+.nav-item a.active {
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
   }
+
+
+
+.home-media{
+    text-align: center;
+    padding: 20px;
+    justify-content: space-between;
+    background-image: url("../src/images/14_Calgary.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 900px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-about{
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home-howdy{
+    font-size: 200px;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-media{
+    text-align: center;
+    padding: 4%;
+}
+
+.page-title{
+    text-align: center;
+    font-size: 65px;
+    text-decoration: underline;
+    text-shadow: 2px 2px grey;
+    padding: 20px;
+}
+
+#about-me-title{
+    padding-top: 4%;
+}
+
+.about-h1{
+    font-size: 41px;
+}
+
+.about-box{
+    border: 1px solid black;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 20),
+    0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+    animation: slowAppear 1.5s ease-in;
+}
+
+
+
+@keyframes slowAppear {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
+
+.project-media{
+    text-align: center;
+}
+
+.contact-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    padding: 1%;
+}
+
+#contact-email-text{
+    text-align: center;
+}
+
+.project-block{
+    border: 1px solid black;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 20),
+    0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+    animation: slowAppear 1.5s ease-in;
+}
+
+.project-media{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.box-text{
+    text-align: left;
+    padding: 0.85%;
+    font-size:x-large;
+    line-height: 1.4;
 }
